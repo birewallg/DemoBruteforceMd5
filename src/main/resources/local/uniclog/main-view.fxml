@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="local.uniclog.MainController">
+    <children>
+        <TabPane layoutX="2.0" layoutY="3.0" prefHeight="387.0" prefWidth="593.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Bruteforce">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                </Tab>
+                <Tab text="Hash md5">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="fieldInput" layoutX="27.0" layoutY="33.0"
+                                           onKeyTyped="#actionConvertToMd5" prefHeight="25.0" prefWidth="509.0"
+                                           promptText="hash"/>
+                                <Label fx:id="labelOutput" layoutX="27.0" layoutY="105.0" prefHeight="17.0"
+                                       prefWidth="510.0"/>
+                                <Label layoutX="27.0" layoutY="14.0" text="Text:"/>
+                                <Label layoutX="26.0" layoutY="88.0" text="Hash:"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
